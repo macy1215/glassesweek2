@@ -1,4 +1,33 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav{
+  background: #AA0601;
+  padding: 25px;
 }
+.nav-bar{
+  justify-content: space-between;
+}
+.logo{
+  max-width: 80px;
+}
+.logo a{
+  background: url(../images/logo-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  padding: 16px 0px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav-bar ul{
+  align-items: center;
+    li:not(:last-child){
+        padding-right: 64px;
+    }
+    a{
+      color: white;
+    }
+    a:hover{
+      color:yellow;
+    }
+  }

@@ -1,5 +1,9 @@
+@import './pages/_reset.scss';
+@import './pages/_container.scss';
+
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
-@import './pages/index.scss';
+@import './pages/_index.scss';

@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    margin:0px;
+}
+.container{
+    max-width: 1320px;
+    margin: 0px auto;
+    padding: 0px 12px;
+}
+.flex{
+    display: flex;
+}
+.fs-1{
+    font-size: 64px;
+    line-height: 150%;
+}
+.fs-2{
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.fs-3{
+    font-size: 36px;
+    line-height: 150%;
+}
+.fs-4{
+    font-size: 24px;
+    line-height: 150%;
+}
+.fs-5{
+    font-size: 20px;
+    line-height: 150%;
+}
+.fs-6{
+    font-size: 16px;
+    line-height: 150%;
+}
+.fs-7{
+    font-size: 14px;
+    line-height: 150%;
+}
+p{
+    line-height: 150%;
+}
+
+/* color */
+.color_wine_red{
+    color:#650300;
+}
+
+.color_white{
+    color:#FFFFFF;
+}
+
+.color_pink{
+    background:#FBF2F2;
+}
+
+.color_red{
+    color:#AA0601;
+}
+
+.color_grey1{
+    color:#00000029;
+}
+.color_grey2{
+    color:#DEE2E6;
+}
+.color_grey3{
+    color:#707070;
+}

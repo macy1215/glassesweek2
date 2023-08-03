@@ -1,4 +1,54 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background: #AA0601;
+  padding-top: 60px;
+    .bottom_nav{
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 36px;
+      .nav_bot_item{
+        align-items: center;
+        li:not(:last-child) {
+          padding-right: 48px;
+        }
+        li a{
+          font-weight: normal;
+        }
+        li a:hover{
+          color: yellow;
+        }
+      }
+    }
+}
+
+.nav_bot_icon {
+  li:not(:last-child) {
+    margin-right: 32px;
+  }  
+  li{
+    max-width: 48px;
+    }
+}
+.store_infor{
+    img{
+      padding-right: 22px;
+    }
+    a:hover{
+      color:aquamarine;
+    }
+}
+.copy_bottom{
+  margin-top: 32px;
+  padding: 32px 0px;
+  border-top: 1px solid #FFFFFF;
+  opacity: 1;
+  justify-content: space-between;
+  .copyright{
+    font-family: 'Roboto';
+  }
+  li:not(:last-child){
+    padding-right: 48px;
+  }
+  a:hover{
+    color: yellow;
+  }
 }

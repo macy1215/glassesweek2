@@ -21,7 +21,7 @@
         float:right;
         a{
           display: block;
-          background: #650300;
+          background: #AA0601;
           padding: 6px 12px;
       }
     }
@@ -188,3 +188,74 @@
     transition: 0.3s;
   }
 }
+
+@media(max-width: 767px){
+  .header{
+    background: url(../images/home-header-sm.png);
+  }
+  .professional{
+    .box_item{
+      flex-wrap: wrap;
+      align-items: start;
+      padding-top: 32.33px;
+      padding-left: 12px;
+      padding-right: 12px;
+      li{
+        padding: 0px 12px;
+
+      }
+      .item_inside {
+        max-width: 50%;
+      }
+    }
+  }
+  .card_box{
+      padding-top: 0px;
+      ul{
+      flex-direction: column;
+      align-items: center;
+        li{
+          max-width: 336px;
+        }
+        li:not(:last-child){
+          padding-bottom: 24px;
+        }
+       }
+    }
+    .banner{
+      background: url(../images/index-bg-sm.png);
+      .banner_box{
+        flex-direction: column;
+        padding: 0px 24px;
+      }
+      .bouble{
+        padding-bottom: 24px;
+      }
+  }
+  
+  .recommend{
+    ul{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:24px 24px;
+      li:not(:last-child) {
+        margin-right: 0px;
+    }
+    }
+    li{
+      margin-right: 0px;
+      max-width: 336px;
+    }
+    
+  }
+  .contact_me .contact_box {
+    margin: 0px auto;
+    max-width: 77%;
+  }
+  .nav_bot_icon li:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+
+

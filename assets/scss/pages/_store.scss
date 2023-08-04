@@ -1,0 +1,90 @@
+.store_box{
+    padding-top:96px ;
+    .store_title{
+        border-left: 8px solid #9F1213;
+        padding-left:16px;
+    }
+}
+.area{
+    align-items: center;
+    margin-top: 32px;
+}
+.drop_list{
+    justify-content: space-between;
+    align-items: center;
+    padding:6px 12px;
+    margin-left: 16px;
+    border: 1px solid #CED4DA;
+    opacity: 1;
+    font-size: 18px;
+    color:#495057;
+    width:23%;
+    height:auto;
+    .arrow{
+        border-color: #666 #fff #fff;
+        border-style: solid;
+        border-width: 4px;
+    }
+}
+
+
+.card_box{
+    flex-wrap: wrap;
+    padding-top: 40px;
+    gap:24px 24px;
+    padding-bottom: 80px;
+
+    .single{
+        max-width: 416px;
+        a{
+            display: block;
+        }
+        .card_img{
+            padding: 0px;
+        }
+    }
+    h5{
+        border: 1px solid #00000020;
+        padding: 8px 24px;
+    }
+    .infor{
+        border: 1px solid #00000020;
+        padding:16px 28px;
+        .title{
+             display: flex;
+             align-items: center;
+             img{
+                padding-right: 10px;
+             }
+        }
+        .title_address{
+            display: flex;
+            align-items: start;
+            img{
+                padding-top: 6px;
+                padding-right: 10px;
+            }
+        }
+        p:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+    .btn_infor{
+        max-width: 100%;
+        text-align: center;
+    }
+    a{
+        background: #000000;
+        font-size: 19px;
+        line-height: 1.5;
+        display: block;
+        padding: 16px 0px ;
+    }
+    
+    a:hover{
+        color:yellow;
+        background-color: #9F1213;
+        transition: 0.3s;
+    }
+
+}

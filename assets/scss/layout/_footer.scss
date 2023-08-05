@@ -102,8 +102,16 @@
   
   .copy_bottom{
     display: block;
+    padding-top: 32px;
+    padding-bottom: 16px;
     ul{
       display: block;
+      li{
+        padding-bottom: 8px;
+      }
     }
   }
+  .copyright{
+    margin-bottom: 8px;
+}
 }

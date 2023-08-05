@@ -89,7 +89,7 @@
 
 }
 
-@media(max-width:767px){
+@media(max-width:992px){
     .store_box {
         padding-top: 80px;
     }
@@ -99,7 +99,32 @@
         gap: 24px 24px;
         padding-bottom: 80px;
         .single{
-            width: 336px;
+            max-width: 336px;
         }
+    }
+}
+@media(max-width:767px){
+    .store_box {
+        padding-top: 40px;
+    }
+    .area{
+        justify-content: space-between;
+        .fs-4{
+            font-size: 16px;
+        }
+        .drop_list{
+            width: 80%;
+            margin:0px;
+        }
+    }
+    .card_box_store {
+        flex-wrap: wrap;
+        padding-top: 24px;
+        gap: 24px 24px;
+        padding-bottom: 64px;
+        .single{
+            max-width: 100%;
+        }
+        
     }
 }

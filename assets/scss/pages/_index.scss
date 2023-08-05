@@ -49,6 +49,7 @@
       }
       .pic{
         padding: 0px 105px 24.08px 105px;
+        text-align: center;
       }
     }
   }
@@ -92,6 +93,9 @@
       font-style: italic;
     }
   }
+  .mobil_banner_box{
+    display: none;
+  }
 }
 
 .recommend{
@@ -132,7 +136,7 @@
   padding: 80px 0px;
   .contact_box{
     margin: 0px auto;
-    max-width: 34%;
+    max-width: 636px;
     h4{
       text-align: center;
       padding-bottom: 48px;
@@ -189,9 +193,13 @@
   }
 }
 
-@media(max-width: 767px){
+@media(max-width: 992px){
+  .container{
+    padding: 0px 36px;
+  }
   .header{
     background: url(../images/home-header-sm.png);
+    background-size: cover;
   }
   .professional{
     .box_item{
@@ -205,7 +213,7 @@
 
       }
       .item_inside {
-        max-width: 50%;
+        width: 50%;
       }
     }
   }
@@ -224,6 +232,9 @@
     }
     .banner{
       background: url(../images/index-bg-sm.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
       .banner_box{
         flex-direction: column;
         padding: 0px 24px;
@@ -257,5 +268,100 @@
   }
 }
 
+@media(max-width: 767px){
+  .container{
+    padding: 0px 12px;
+  }
+  .header{
+    background: url(../images/home-header-sm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+      .header-box{
+        h2{
+          font-size: 16px;
+        }
+        h3{
+          font-size: 24px;
+        }
+        .but-shop{
+          margin-top: 8px;
+        }
+      }
+  }
+  .professional{
+    padding: 40px 0px;
+    .title{
+      font-size: 24px;
+    }
+    .box_item{
+      display: block;
+      li:not(:last-child){
+          margin-bottom: 32px;
+      }
+      .item_inside{
+        width: 100%;
+        .pic{
+          padding:0px 100px 24px 100px;
+        }
+      }
+    }
+  }
+.classic{
+  padding: 40px 0px;
+  
+  .card_box ul li{
+    max-width: 100%;
+    h4{
+      font-size: 48px;
+    }
+  }
+  li:not(:last-child) {
+    padding-right: 0px;
+  }
+  }
+.banner{
+    padding: 40px 0px;
+    .title{
+      padding-bottom: 24px;
+    }
+    .table_banner_box{
+      display: none;
+    }
+    .mobil_banner_box{
+      display: block;
+      
+    }
+  }
+
+  .recommend{
+    padding:40px 0px;
+    .title{
+      padding-bottom: 24px;
+    }
+    li{
+      max-width: 100%;
+    }
+  }
+
+  .contact_me{
+    padding: 40px 0px;
+    
+    .contact_box{
+      max-width: 100%;
+      h4{
+        padding-bottom: 24px;
+      }
+      .fs-5{
+        font-size: 16px;
+      }
+      .form_btn{
+        width: 100%;
+      } 
+    }
+   
+  }
+
+
+}
 
 

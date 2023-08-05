@@ -31,3 +31,35 @@
       color:yellow;
     }
   }
+
+@media(max-width:500px){
+  .nav{
+    .container{
+      padding: 0px;
+    }
+    padding:0px;
+    .nav-bar {
+        display: block;
+        .logo{
+          padding: 16px 0px;
+        }
+    }
+    ul{
+      flex-wrap: wrap;
+      li{
+        border: 1px solid #FFFFFF;
+        width: 50%;
+        overflow: hidden;
+      }
+      li:not(:last-child) {
+        padding-right:0px;
+      }
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0px;
+      }
+    }
+  }
+}

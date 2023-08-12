@@ -145,28 +145,32 @@
       padding-bottom: 24px;
     }
   }
-  .form{
-    p{
-      padding-bottom: 8px;
+  form{
+    ul li label{
+      display: block;
     }
-    .input{
+    input{
+      width: 100%;
       border: 1px solid #000000;
       padding: 6px 12px;
       margin-bottom: 16px;
-        span{
-          color:#000000;
-          text-transform: uppercase;
-          opacity:  0.2;
-        }
+      margin-top: 8px;
+    }
+    .opinon{
+      padding-bottom: 112px;
     }
     .text_box{
       height: 136px;
     }
     .privacy{
+      justify-content: start;
       align-items: center;
       padding-bottom: 48px;
       input[type="checkbox" i] {
         margin: 0px 4px 0px 0px;
+      }
+      .checkbox{
+        width: auto;
       }
       p{
         margin: 0px;

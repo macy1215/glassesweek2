@@ -192,28 +192,30 @@
       <div class="container contact_box">
         <h4 class="fs-2 color_wine_red title">聯絡我們</h4>
         <p class="fs-5">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-        <div class="form">
-          <p>姓名</p>
-          <div class="input">
-            <span>陳小明</span>
-          </div>
-          <p>聯絡電話</p>
-          <div class="input">
-            <span>0912-345-678</span>
-          </div>
-          <p>電子郵件</p>
-          <div class="input">
-            <span>example@email.com</span>
-          </div>
-          <p>意見反應</p>
-          <div class="input text_box">
-            <span>請輸入您的意見</span>
-          </div>
-          <div class="privacy flex">
-            <input type="checkbox">
-            <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
-          </div>
-        </div>
+        <form>
+          <ul>
+            <li>
+              <label for="name">姓名</label>
+              <input type="text" id="name" placeholder="陳小明">
+            </li>
+            <li>
+              <label for="phone">聯絡電話</label>
+              <input type="text" id="phone" placeholder="0912-345-678">
+            </li>
+            <li>
+              <label for="email">電子郵件</label>
+              <input type="text" id="email" placeholder="example@email.com">
+            </li>
+            <li>
+              <label for="opinion">意見反應</label>
+              <input class="opinon" type="text" id="opinion" placeholder="請輸入您的意見">
+            </li>
+              <li class="privacy flex">
+                <input class="checkbox" type="checkbox">
+                <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+              </li>
+          </ul>
+        </form>
         <a href="#" class="form_btn color_white">確認送出</a>
       </div>
     </div>

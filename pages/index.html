@@ -10,8 +10,8 @@
     <%- include('./layout/header'); -%>
 
     <div class="header">
-      <div class="header-box container">
-        <h2 class="fs-3 color_winde_red">Promise-Desert 2020 早春系列</h2>
+      <div class="headerBox container">
+        <h2 class="fs-3 color_winde_red bannerTitle">Promise-Desert 2020 早春系列</h2>
         <h3 class="fs-1  color_winde_red">看得清，才能看得遠</h3>
         <div class="but-shop">
           <a class="fs-5 color_white" href="#">立即購買</a>
@@ -21,11 +21,11 @@
 
     <div class="professional color_pink">
       <div class="pro_box container">
-        <h4 class="fs-2 color_wine_red">
+        <h4 class="fs-2 color_wine_red titleSection2">
           用專業的心，做專業的事
         </h4>
         <ul class="box_item flex">
-            <li class="item_inside">
+            <li class="item_inside focuseBox1">
               <div class="pic">
                 <img src="../assets/images/home-section2-1.png" alt="單一價格">
               </div>
@@ -37,7 +37,7 @@
               </p>
             </li>
 
-            <li class="item_inside">
+            <li class="item_inside focuseBox2" >
               <div class="pic">
                 <img src="../assets/images/home-section2-2.png" alt="20分鐘取件">
               </div>
@@ -49,7 +49,7 @@
               </p>
             </li>
 
-            <li class="item_inside">
+            <li class="item_inside focuseBox3">
               <div class="pic">
                 <img src="../assets/images/home-section2-3.png" alt="安心售後服務">
               </div>
@@ -61,7 +61,7 @@
               </p>
             </li>
 
-            <li class="item_inside">
+            <li class="item_inside focuseBox4">
               <div class="pic">
                 <img src="../assets/images/home-sectioin2-4.png" alt="關於鏡片">
               </div>
@@ -222,7 +222,10 @@
     
     
     <%- include('./layout/footer'); -%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../layout/index.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

@@ -1,11 +1,12 @@
-.header {
+
+.banner_slide {
   background: url(../images/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 296px;
-  padding-bottom: 296px;
+  padding: 296px 0px;
     .headerBox{
       text-align: right;
+      transform: none;
     }
     h2{
       font-weight: normal;
@@ -18,14 +19,34 @@
     }
     .but-shop {  
         max-width: 104px;
-        float:right;
+        margin-left: auto;
         a{
           display: block;
           background: #AA0601;
           padding: 6px 12px;
       }
     }
+    @include pad(){
+      background: url(../images/home-header-sm.png);
+      background-size: cover;
+    };
+    
+    @include mobil(){
+      padding: 144px 0px;
+      .fs-3{
+        font-size: 1rem;
+      }
+      .fs-1{
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      .fs-5{
+        font-size: 1.25rem;
+      }
+    };
 }
+
+
 
 .professional{
   padding: 80px 0px;
@@ -37,19 +58,55 @@
     align-items: center;
     justify-content: center;
     padding-top: 36.5px;
-    li{
-      padding-right: 24px;
-    }
+    gap:24px;
     .item_inside{
-      max-width: 306px;
+      width: 306px;
       h5{
         text-align: center;
         padding-bottom: 8px;
         font-weight: bold;
       }
       .pic{
-        padding: 0px 105px 24.08px 105px;
+        max-width: 83.83px;
+        margin: 0px auto;
         text-align: center;
+        padding-bottom: 24.33px;
+      }
+    }
+  }
+  @include pad(){
+    .box_item{
+      flex-wrap: wrap;
+      gap:48px 24px;
+      align-items: baseline;
+      padding-top: 32.33px;
+      .item_inside{
+        max-width: 336px;
+        .pic{
+          padding-bottom: 24.08px;
+        }
+      }
+    }
+  };
+  @include mobil(){
+    .fs-2{
+      font-size: 24px;
+    }
+    padding: 40px 0px;
+    .title{
+      font-size: 24px;
+    }
+    .box_item{
+      display: block;
+      li{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      li:not(:last-child){
+          margin-bottom: 32px;
+      }
+      .item_inside{
+        width: 100%;
       }
     }
   }
@@ -57,12 +114,14 @@
 
 .classic{
   padding: 80px 0px;
-      img{
-        margin-bottom: 8px;
-      }
-      .title{
-        margin-bottom: 48px;
-        text-align: center;
+    .classicTitle{
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .card_box{
+      .classicBox{
+        gap:24px ;
+        align-items: center;
       }
       li {
         h4  {
@@ -70,13 +129,41 @@
           font-family: 'Roboto';
           font-style: italic;
           }
+        .img_box{
+          max-width: 416px;
+          margin-bottom: 8px;
+        }
       }
-      li:not(:last-child){
-        padding-right: 24px;
+    }  
+  @include pad(){
+    .card_box{
+      .classicBox{
+        flex-direction: column;
       }
+      li{
+        .img_box{
+          max-width: 336px;
+        }
+      }
+    }
+  };
+  @include mobil(){
+    .card_box{
+      padding: 40px 0px;
+      li{
+        max-width: 100%;
+        .img_box{
+          max-width: 348px;
+        }
+      }
+      // li:not(:last-child) {
+      //   padding-right: 0px;
+      // }
+    }
+  }
 }
 
-.banner{
+.section_brand{
   padding: 80px 0px;
   background: url(../images/index-bg.png);
   background-size: contain;
@@ -85,35 +172,71 @@
     text-align: center;
   }
   .banner_box{
-    h4{
+    .item-width{
+      width: 100%;
+    }
+    .item_pic{
+      // max-width: 696px;
+      height: 240px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .pic_left{
+      background-image: url(../assets/images/home-section4-1.png);
+    }
+    .pic_right{
+      background-image: url(../assets/images/home-section4-2.png);
+    }
+    .h4{
+      padding: 8px 0px;
       text-align: center;
       background: white;
-      padding:8px 0px;
       font-family: 'Roboto';
       font-style: italic;
     }
   }
-  .mobil_banner_box{
-    display: none;
+  @include pad(){
+      background: url(../images/index-bg-sm.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      .banner_box{
+        flex-direction: column;
+        padding: 0px 22px;
+      }
+      .item_left{
+        margin-bottom: 24px;
+      }
+  }
+  @include mobil(){
+    .banner_box{
+      padding: 0px;
+      .pic_left{
+        background-image: url(../assets/images/home-section4-1-sm.png);
+      }
+      .pic_right{
+        background-image: url(../assets/images/home-section4-2-sm.png);
+      }
+    }
   }
 }
 
-.recommend{
+.section_recommend{
   padding:80px 0px;
   .title{
     text-align: center;
     padding-bottom: 48px;
   }
-  li{
+  .item_box{
+    gap: 24px;
+  }
+  .box_style{
     max-width: 306px;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
     box-shadow: 0px 2px 6px #00000029;
     opacity: 1;
-
     .img_box{
-      padding-bottom: 16px;
-      height: 306px;
       overflow: hidden;
     }
     .rec_title{
@@ -121,17 +244,41 @@
       padding: 16px;
       flex-direction: column;
       justify-content: space-between;
-        .item p{
+        .item p:not(:last-child){
           padding-bottom: 8px;
         }
     }
   }
-  li:not(:last-child){
-    margin-right: 24px;
-  }
+  // li:not(:last-child){
+  //   margin-right: 24px;
+  // }
+  @include pad(){
+    .item_box{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .box_style{
+      max-width: 336px;
+      .img_box{
+        height: 306px;
+      }
+    }
+  };
+  @include mobil(){
+    padding:40px 0px;
+    .item_box{
+      flex-direction: column
+    }
+    .box_style{
+      max-width: 100%;
+    }
+    .title{
+      padding-bottom: 24px;
+    }
+  };
 }
 
-.contact_me{
+.contact_section{
   background: #FBF2F2;
   padding: 80px 0px;
   .contact_box{
@@ -145,32 +292,37 @@
       padding-bottom: 24px;
     }
   }
-  form{
-    ul li label{
+  .form{
+    .label{
       display: block;
     }
-    input{
+    .input{
       width: 100%;
       border: 1px solid #000000;
       padding: 6px 12px;
       margin-bottom: 16px;
       margin-top: 8px;
+      background-color: #FBF2F2;
     }
-    .opinon{
-      padding-bottom: 112px;
-    }
-    .text_box{
+    .opinion{
       height: 136px;
+      padding-top: 6px;
     }
+    .opinion::placeholder{
+      vertical-align:text-top; 
+      padding-top: 0px;
+      color: rgb(0 0 0 / 40%);
+    }
+    // 選項
     .privacy{
       justify-content: start;
       align-items: center;
       padding-bottom: 48px;
       input[type="checkbox" i] {
         margin: 0px 4px 0px 0px;
-      }
-      .checkbox{
-        width: auto;
+        vertical-align: middle ;
+        width: 20px;
+        height: 20px;
       }
       p{
         margin: 0px;
@@ -195,163 +347,19 @@
     color:#650300;
     transition: 0.3s;
   }
-}
-
-@media(max-width: 992px){
-  .container{
-    padding: 0px 36px;
-  }
-  .header{
-    background: url(../images/home-header-sm.png);
-    background-size: cover;
-  }
-  .professional{
-    .box_item{
-      flex-wrap: wrap;
-      align-items: start;
-      padding-top: 32.33px;
-      padding-left: 12px;
-      padding-right: 12px;
-      li{
-        padding: 0px 12px;
-
-      }
-      .item_inside {
-        width: 50%;
-      }
+  @include pad(){
+    .contact_box {
+      margin: 0px auto;
+      padding: 0px 30px;
+    }
+    .nav_bot_icon li:not(:last-child) {
+      margin-right: 16px;
     }
   }
-  .card_box{
-      padding-top: 0px;
-      ul{
-      flex-direction: column;
-      align-items: center;
-        li{
-          max-width: 336px;
-        }
-        li:not(:last-child){
-          padding-bottom: 24px;
-        }
-       }
-    }
-    .banner{
-      background: url(../images/index-bg-sm.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      
-      .banner_box{
-        flex-direction: column;
-        padding: 0px 24px;
-      }
-      .bouble{
-        padding-bottom: 24px;
-      }
-  }
-  
-  .recommend{
-    ul{
-      flex-wrap: wrap;
-      justify-content: center;
-      gap:24px 24px;
-      li:not(:last-child) {
-        margin-right: 0px;
-    }
-    }
-    li{
-      margin-right: 0px;
-      max-width: 336px;
-    }
-    
-  }
-  .contact_me .contact_box {
-    margin: 0px auto;
-    max-width: 77%;
-  }
-  .nav_bot_icon li:not(:last-child) {
-    margin-right: 16px;
-  }
-}
-
-@media(max-width: 767px){
-  .container{
-    padding: 0px 12px;
-  }
-  .header{
-    background: url(../images/home-header-sm.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-      .headerBox{
-        h2{
-          font-size: 16px;
-        }
-        h3{
-          font-size: 24px;
-        }
-        .but-shop{
-          margin-top: 8px;
-        }
-      }
-  }
-  .professional{
+  @include mobil(){
     padding: 40px 0px;
-    .title{
-      font-size: 24px;
-    }
-    .box_item{
-      display: block;
-      li:not(:last-child){
-          margin-bottom: 32px;
-      }
-      .item_inside{
-        width: 100%;
-        .pic{
-          padding:0px 100px 24px 100px;
-        }
-      }
-    }
-  }
-.classic{
-  padding: 40px 0px;
-  
-  .card_box ul li{
-    max-width: 100%;
-    h4{
-      font-size: 48px;
-    }
-  }
-  li:not(:last-child) {
-    padding-right: 0px;
-  }
-  }
-.banner{
-    padding: 40px 0px;
-    .title{
-      padding-bottom: 24px;
-    }
-    .table_banner_box{
-      display: none;
-    }
-    .mobil_banner_box{
-      display: block;
-      
-    }
-  }
-
-  .recommend{
-    padding:40px 0px;
-    .title{
-      padding-bottom: 24px;
-    }
-    li{
-      max-width: 100%;
-    }
-  }
-
-  .contact_me{
-    padding: 40px 0px;
-    
     .contact_box{
-      max-width: 100%;
+      padding: 0px 14px;
       h4{
         padding-bottom: 24px;
       }
@@ -362,10 +370,9 @@
         width: 100%;
       } 
     }
-   
   }
-
-
 }
+
+
 
 

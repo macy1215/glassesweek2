@@ -21,7 +21,7 @@ const timeline = gsap.timeline();
 
 gsap.from( headerBox,{
     duration:2,
-    x:-200,
+    x:0,
     scrollTrigger:{
         trigger: headerBox,
     },
@@ -29,9 +29,9 @@ gsap.from( headerBox,{
 
 
 gsap.from(titleSection2,{
-    opacity:0,
+    opacity:1,
     duration:1,
-    x:100,
+    x:0,
     scrollTrigger:{
         trigger: titleSection2,
         
@@ -39,7 +39,7 @@ gsap.from(titleSection2,{
 })
 
 gsap.from(itemInside1,{
-    x:100,
+    x:0,
     duration:2,
     ease:"power4.out",
     scrollTrigger:{
@@ -47,7 +47,7 @@ gsap.from(itemInside1,{
     },
 })
 gsap.from(itemInside2,{
-    x:100,
+    x:0,
     duration:1,
     ease:"power4.out",
     scrollTrigger:{
@@ -55,7 +55,7 @@ gsap.from(itemInside2,{
     },
 })
 gsap.from(itemInside3,{
-    x:100,
+    x:0,
     duration:1,
     ease:"power4.out",
     scrollTrigger:{
@@ -63,7 +63,7 @@ gsap.from(itemInside3,{
     },
 })
 gsap.from(itemInside4,{
-    x:100,
+    x:0,
     duration:1,
     ease:"power4.out",
     scrollTrigger:{
@@ -72,27 +72,27 @@ gsap.from(itemInside4,{
 })
 
 gsap.from(classicTitle,{
-    opacity:0,
+    opacity:1,
     duration:1,
-    x:-100,
+    x:0,
     scrollTrigger:{
         trigger: classicTitle,
     },
 })
 
 gsap.from(classicBox,{
-    opacity:0,
+    opacity:1,
     duration:1,
-    y:300,
+    y:0,
     scrollTrigger:{
         trigger: classicSection,
     },
 })
 
 gsap.from(bannerTitle,{
-    opacity:0,
+    opacity:1,
     duration:1,
-    x:100,
+    x:0,
     scrollTrigger:{
         trigger: bannerSection,
     },

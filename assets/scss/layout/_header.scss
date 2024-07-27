@@ -1,24 +1,25 @@
 .nav{
   background: #AA0601;
-  padding: 25px;
+  padding: 16px 0px;
 }
 .nav-bar{
   justify-content: space-between;
 }
 .logo{
   max-width: 80px;
+  a{
+    background: url(../images/logo-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 16px 0px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
-.logo a{
-  background: url(../images/logo-white.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 16px 0px;
-  display: block;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 .nav-bar ul{
   align-items: center;
     li:not(:last-child){
@@ -32,34 +33,38 @@
     }
   }
 
-@media(max-width:767px){
-  .nav{
-    .container{
-      padding: 0px;
-    }
-    padding:0px;
-    .nav-bar {
-        display: block;
-        .logo{
-          padding: 16px 0px;
+  @include mobil(){
+    .nav{
+      .container{
+        padding: 0px;
+      }
+      padding:0px;
+      .nav-bar {
+          display: block;
+          .logo{
+            padding: 16px 0px 16px 15px;
+            a{
+              width: 80px;
+            }
+          }
+      }
+      ul{
+        flex-wrap: wrap;
+        li{
+          border: 1px solid #FFFFFF;
+          width: 50%;
+          overflow: hidden;
         }
-    }
-    ul{
-      flex-wrap: wrap;
-      li{
-        border: 1px solid #FFFFFF;
-        width: 50%;
-        overflow: hidden;
-      }
-      li:not(:last-child) {
-        padding-right:0px;
-      }
-      a{
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 12px 0px;
+        li:not(:last-child) {
+          padding-right:0px;
+        }
+        a{
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 12px 0px;
+        }
       }
     }
   }
-}
+

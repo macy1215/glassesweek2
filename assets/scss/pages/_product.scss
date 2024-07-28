@@ -1,0 +1,188 @@
+.color_price{
+    color:$color_primary
+}
+.color_brown_dark{
+    background-color: #5F3E2D;
+}
+.color_brown_normal{
+    background-color: #B75929;
+}
+.nav_list{
+    li{
+        position: relative;
+    }
+   .list_txt{
+        padding: 24px 0px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        border: 1px solid #DCDCDC;
+        position: relative;
+   }
+   .hover_bar{
+        opacity: 0;
+        height: 8px;
+        background-color: #AA0601;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom:0px;
+        transition: 0.3s;
+   }
+   li:hover .hover_bar{
+        display: block;
+        opacity: 1;
+   }
+   @include pad(){
+    .container{
+        padding: 0px;
+    }
+    .fs-3{
+        font-size: 1.5rem;
+    }
+   }
+   @include mobil(){
+    .container{
+        padding: 0px;
+    }
+    .fs-3{
+        font-size: 1rem;
+    }
+   }
+}
+
+.show_case{
+    height: 296px;
+    .h-100{
+        height: 100%;
+    }
+    .show_box{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
+    .show_left{
+        background-image: url('../images/product-header-1.png');
+    }
+    .show_right{
+        background-image: url('../images/product-header-2.png');
+    }
+    @include pad(){
+        height: 296px;
+        .show_left{
+            background-image: url('../images/product-header-sm-1.png');
+        }
+        .show_right{
+            background-image: url('../images/product-header-sm-2.png');
+        }
+    }
+    @include mobil(){
+        height: 136px;
+    }
+}
+
+.adding_frame{
+    .container{
+        padding: 0px 12px;
+    }
+    .title{
+        text-align: center;
+    }
+    .sec_title{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .product_list{
+        flex-wrap: wrap;
+        margin: 0px -12px;
+        // gap: 24px 80px;
+        li{
+            padding: 0px 12px;
+            margin-bottom: 80px;
+        }
+        .col-box{
+            width: 25%;
+        }
+        .pic_style{
+            display: block;
+            width: 100%;
+            height: 168px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .product_inf{
+            justify-content: space-between;
+        }
+        .color_box {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+        .color_box:first-child {
+            margin-right: 8px;
+        }
+        .pro_1{
+            background-image: url('../images/product-1.png');
+        }
+        .pro_2{
+            background-image: url('../images/product-2.png');
+        }
+        .pro_3{
+            background-image: url('../images/product-3.png');
+        }
+        .pro_4{
+            background-image: url('../images/product-4.png');
+        }
+        .pro_5{
+            background-image: url('../images/product-5.png');
+        }
+        .pro_6{
+            background-image: url('../images/product-6.png');
+        }
+        .pro_7{
+            background-image: url('../images/product-7.png');
+        }
+        .pro_8{
+            background-image: url('../images/product-8.png');
+        }
+        .pro_9{
+            background-image: url('../images/product-9.png');
+        }
+        .pro_10{
+            background-image: url('../images/product-10.png');
+        }
+        .pro_11{
+            background-image: url('../images/product-11.png');
+        }
+        .pro_12{
+            background-image: url('../images/product-12.png');
+        }
+    }
+    @include pad(){
+        .product_list{
+            padding: 0px 24px;
+            li{
+                margin-bottom: 24px;
+            }
+            .col-box{
+                width: 50%;
+            }
+        }
+        
+    }
+    @include mobil(){
+        .product_list{
+            padding: 0px;
+            .col-box{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.pagination{
+
+}

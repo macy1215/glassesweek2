@@ -161,6 +161,9 @@
             background-image: url('../images/product-12.png');
         }
     }
+    .product_list :nth-last-child(-n+9){
+            margin-bottom: 0px;
+    }
     @include pad(){
         .product_list{
             padding: 0px 24px;
@@ -184,5 +187,28 @@
 }
 
 .pagination{
-
+    margin-bottom: 80px;
+    .padination_style{
+        justify-content: center;
+        align-items: center;
+    }
+   .page_a{
+    display: block;
+    border: 1px solid #555555;
+   } 
+   .p_12{
+    padding: 12px;
+   }
+   .p_num{
+    padding:12px 16px ;
+   }
+   .p_num:hover{
+    background-color: #000000;
+    color:#FFFFFF;
+   }
+   .btn_pre:hover, 
+   .btn_next:hover {
+        color: #555555;
+        background-color: #F2F2F2;
+    }
 }

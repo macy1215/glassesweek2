@@ -31,6 +31,9 @@ body {
 }
 
 $color_primary:#AA0601;
+$padding_top:8px;
+$padding_bottom:8px;
+$color_sec:#650300;
 
 .flex{
     display: flex;
@@ -39,8 +42,11 @@ $color_primary:#AA0601;
 .fs-1{
     font-size: 4rem;
 }
-
 .fs-2{
+    font-size: 3rem;
+}
+
+.fs-2_6{
     font-size: 2.625rem;
 }
 

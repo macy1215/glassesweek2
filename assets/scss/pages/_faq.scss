@@ -1,0 +1,40 @@
+.box_pad_top{
+    padding-top: $padding_top*12;
+    padding-bottom: $padding_bottom*3;
+    h2{
+        margin-bottom: $padding_bottom*2;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+    }
+    @include pad(){
+        padding-top: $padding_top*10;
+        padding-left:32px; 
+        padding-right:32px; 
+    }
+    @include mobil(){
+        padding-top: $padding_top*5;
+        padding-left:12px; 
+        padding-right:12px;  
+    }
+}
+.box_pad_bottom{
+    padding-bottom: $padding_bottom*10;
+}
+
+.content{
+    h5{
+        padding-bottom: $padding_bottom;
+    }
+    li{
+        padding-bottom: $padding_bottom*4;
+    }
+    @include pad(){
+        padding-left:32px; 
+        padding-right:32px; 
+    }
+    @include mobil(){
+        padding-bottom: $padding_bottom*8;
+        padding-left:12px; 
+        padding-right:12px;  
+    }
+}

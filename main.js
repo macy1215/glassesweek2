@@ -1,5 +1,6 @@
 import './assets/scss/all.scss';
 
+console.log('別再有X軸了！')
 // const headerBox =document.querySelector(".headerBox");
 
 // const proFessional = document.querySelector(".professional");

@@ -3,7 +3,9 @@
   background: url(../images/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 296px 0px;
+  height: 787px;
+  justify-content: end;
+  align-items: center;
     .headerBox{
       text-align: right;
       transform: none;
@@ -18,17 +20,21 @@
       color:#650300;
     }
     .but-shop {  
-        max-width: 104px;
+        max-width: 19%;
         margin-left: auto;
         a{
           display: block;
           background: #AA0601;
           padding: 6px 12px;
+          text-align: center;
       }
     }
     @include pad(){
       background: url(../images/home-header-sm.png);
       background-size: cover;
+      .but-shop {  
+        max-width: 18.4%;
+      }
     };
     
     @include mobil(){
@@ -60,14 +66,14 @@
     padding-top: 36.5px;
     gap:24px;
     .item_inside{
-      width: 306px;
+      max-width: 24.9%;
       h5{
         text-align: center;
         padding-bottom: 8px;
         font-weight: bold;
       }
       .pic{
-        max-width: 83.83px;
+        max-width: 27%;
         margin: 0px auto;
         text-align: center;
         padding-bottom: 24.33px;
@@ -81,7 +87,7 @@
       align-items: baseline;
       padding-top: 32.33px;
       .item_inside{
-        max-width: 336px;
+        max-width: 44.1%;
         .pic{
           padding-bottom: 24.08px;
         }
@@ -106,7 +112,7 @@
           margin-bottom: 32px;
       }
       .item_inside{
-        width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -130,7 +136,7 @@
           font-style: italic;
           }
         .img_box{
-          max-width: 416px;
+          max-width: 100%;
           margin-bottom: 8px;
         }
       }
@@ -165,7 +171,7 @@
 
 .section_brand{
   padding: 80px 0px;
-  background: url(../images/index-bg.png);
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
   background-size: contain;
   .title{
     padding-bottom: 48px;
@@ -183,10 +189,10 @@
       background-size: cover;
     }
     .pic_left{
-      background-image: url(../assets/images/home-section4-1.png);
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true);
     }
     .pic_right{
-      background-image: url(../assets/images/home-section4-2.png);
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true);
     }
     .h4{
       padding: 8px 0px;
@@ -197,7 +203,7 @@
     }
   }
   @include pad(){
-      background: url(../images/index-bg-sm.png);
+      background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
       background-size: cover;
       background-repeat: no-repeat;
       .banner_box{
@@ -209,13 +215,17 @@
       }
   }
   @include mobil(){
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .banner_box{
       padding: 0px;
       .pic_left{
-        background-image: url(../assets/images/home-section4-1-sm.png);
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true);
       }
       .pic_right{
-        background-image: url(../assets/images/home-section4-2-sm.png);
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true);
       }
     }
   }
@@ -231,7 +241,6 @@
     gap: 24px;
   }
   .box_style{
-    max-width: 306px;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
     box-shadow: 0px 2px 6px #00000029;
@@ -283,7 +292,7 @@
   padding: 80px 0px;
   .contact_box{
     margin: 0px auto;
-    max-width: 636px;
+    max-width: 43.6%;
     h4{
       text-align: center;
       padding-bottom: 48px;
@@ -333,7 +342,7 @@
   
   .form_btn{
     margin: 0px auto;
-    max-width: 416px;
+    max-width: 65.6%;
     padding: 16px 0px;
     line-height: 150%;
     background: #AA0601;

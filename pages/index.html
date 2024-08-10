@@ -10,16 +10,18 @@
     <%- include('./layout/header'); -%>
 
     <div class="banner_slide">
-      <div class="headerBox container lh-15">
-        <h2 class="fs-3 color_winde_red bannerTitle">
-          Promise-Desert 2020 早春系列
-        </h2>
-        <h3 class="fs-1  color_winde_red mb_4">
-          看得清，才能看得遠
-        </h3>
-        <div class="but-shop">
-          <a class="fs-5 color_white" href="#">
-            立即購買</a>
+      <div class="container flex justify-content-e align-items-c h-100">
+        <div class="headerBox lh-15">
+          <h2 class="fs-3 color_winde_red bannerTitle">
+            Promise-Desert 2020 早春系列
+          </h2>
+          <h3 class="fs-1  color_winde_red mb_4">
+            看得清，才能看得遠
+          </h3>
+          <div class="but-shop">
+            <a class="fs-5 color_white" href="#">
+              立即購買</a>
+          </div>
         </div>
       </div>
     </div>
@@ -147,7 +149,7 @@
                 <p>Jessy</p>
                 <p>眼鏡品質優良，下次還會想來這邊購買！</p>
               </div>
-              <div class="date fs-7 color_grey3 lh-15">2021/06/20</div>
+              <time class="date fs-7 color_grey3 lh-15">2021/06/20</time>
             </div>
           </li>
           <li class="box_style">
@@ -159,7 +161,7 @@
                 <p>凱倫</p>
                 <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
               </div>
-              <div class="date fs-7 color_grey3 lh-15">2021/04/18</div>
+              <time class="date fs-7 color_grey3 lh-15">2021/04/18</time>
             </div>
           </li>
           <li class="box_style">
@@ -171,7 +173,7 @@
                 <p>悠悠</p>
                 <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
               </div>
-              <div class="date fs-7 color_grey3 lh-15">2020/12/25</div>
+              <time class="date fs-7 color_grey3 lh-15">2020/12/25</time>
             </div>
           </li>
           <li class="box_style">
@@ -183,7 +185,7 @@
                 <p>Kyuan</p>
                 <p>服務很好，品質沒有任何問題，非常喜歡。</p>
               </div>
-              <div class="date fs-7 color_grey3 lh-15">2020/10/31</div>
+              <time class="date fs-7 color_grey3 lh-15">2020/10/31</time>
             </div>
           </li>
         </ul>
@@ -202,19 +204,19 @@
             </li>
             <li>
               <label for="phone" class="label">聯絡電話</label>
-              <input type="text" id="phone" placeholder="0912-345-678"  class="input">
+              <input type="tel" id="phone" placeholder="0912-345-678"  class="input">
             </li>
             <li>
               <label for="email" class="label">電子郵件</label>
-              <input type="text" id="email" placeholder="example@email.com"  class="input">
+              <input type="email" id="email" placeholder="example@email.com"  class="input">
             </li>
             <li>
               <label for="opinion" class="label">意見反應</label>
               <textarea class="opinion input" type="text" id="opinion" placeholder="請輸入您的意見" ></textarea>
             </li>
             <li class="privacy flex">
-              <input class="checkbox" type="checkbox">
-              <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+              <input class="checkbox" type="checkbox" id="checkbox">
+              <label for="checkbox" >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
             </li>
           </ul>
         </form>

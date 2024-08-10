@@ -49,6 +49,9 @@
       .fs-5{
         font-size: 1.25rem;
       }
+      .but-shop {  
+        max-width: 46.4%;
+      }
     };
 }
 
@@ -267,7 +270,7 @@
       justify-content: center;
     }
     .box_style{
-      max-width: 336px;
+      max-width: 48%;
       .img_box{
         height: 306px;
       }
@@ -280,6 +283,9 @@
     }
     .box_style{
       max-width: 100%;
+      img{
+        width: 100%;
+      }
     }
     .title{
       padding-bottom: 24px;
@@ -360,6 +366,7 @@
     .contact_box {
       margin: 0px auto;
       padding: 0px 30px;
+      max-width: 81%;
     }
     .nav_bot_icon li:not(:last-child) {
       margin-right: 16px;
@@ -368,6 +375,7 @@
   @include mobil(){
     padding: 40px 0px;
     .contact_box{
+      max-width: 100%;
       padding: 0px 14px;
       h4{
         padding-bottom: 24px;

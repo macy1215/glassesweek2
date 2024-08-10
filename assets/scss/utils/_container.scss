@@ -1,5 +1,6 @@
 .container{
-    max-width: 1296px;
+    max-width: 1320px;
+    padding: 0px 12px;
     margin:0px auto;
     @include pad_plus(){
         padding: 0px 12px;
@@ -104,6 +105,9 @@ $color_sec:#650300;
 }
 .mb_4{
     margin-bottom: 4px;
+}
+.mb-48{
+    margin-bottom: 48px;
 }
 
 .fw-bold{
